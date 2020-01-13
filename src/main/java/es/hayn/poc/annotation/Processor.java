@@ -13,8 +13,6 @@ public class Processor {
                 if (field.get(object) == null) {
                     field.set(object, fieldType.getDeclaredConstructor().newInstance());
                 }
-            } else {
-                System.out.println("No NeverNull");
             }
         }
     }
